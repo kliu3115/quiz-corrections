@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: "Quicksand";
+}
+
+body {
+  background-color:white;
+}
+
+.home {
+  color: black;
+  text-align: center;
+}
+
+.navbar {
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  max-width: 1050px;
+  margin: 0 auto;
+  border-bottom: 1px solid #e7e7e7;
+}
+.navbar h1 {
+  color: #132c61;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #132c61;
+}
+
+.content {
+  max-width: 1000px;
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.text-danger{
+  color: red;
+  font-size: small;
+}
+
+.setButton {
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 12px;
+    color: black;
+    padding: 15px 32px;
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px 10px;
+}
+
+.setButton:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.loginButton {
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 12px;
+  color: black;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  margin: 2px 10px;
+}
+
+.loginButton:hover {
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24), 0 5px 5px 0 rgba(0,0,0,0.19);
+}
+
+.deleteButton {
+  background-color: white;
+  border: 1px solid red;
+  border-radius: 12px;
+  color: red;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  margin: 2px 10px;
+}
+
+.deleteButton:hover {
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24), 0 5px 5px 0 rgba(0,0,0,0.19);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px; 
+}
+
+.flashcard {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 500px;
+  height: 350px;
+  color: black;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.flashcard:hover {
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24), 0 5px 5px 0 rgba(0,0,0,0.19);
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+}
+
+.createSetTable {
+  padding: 0px;
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  align-items: center;
+}
+.createSetTable th,td:nth-child(1) {
+  width: 40px;
+  /*background: #aaa;*/
+  text-align: center
+  }
+.createSetTable th,td:nth-child(2) {
+  width: 300px;
+  word-break: break-word; 
+  white-space: normal;
+  text-align: center
+}
+.createSetTable th,td:nth-child(3) {
+  width: 300px;
+  word-break: break-word; 
+  white-space: normal;
+  text-align: center
+ }
+ .createSetTable th,td:nth-child(4) {
+  width: 300px;
+  word-break: break-word; 
+  white-space: normal;
+  text-align: center
+ }
+ .createSetTable textarea {
+  width: 100%;
+  border: none;
+  outline: none; 
+  font-family: inherit; 
+  height: auto;
+}
+
+.scrollable-text {
+  display: inline-block;
+  flex: 0 0 auto;
+  max-width: 300px; 
+  max-height: 250px;
+  word-break: break-word; 
+  white-space: normal;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.scrollable-cell {
+  width: 300px; /* Adjust the width as needed */
+  padding: 8px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.scrollable-text {
+  max-width: 100%; /* Ensure it fits within the cell */
+  max-height: 200px; /* Adjust the height as needed */
+  word-break: break-word;
+  white-space: pre-wrap;
+  overflow-y: auto;
+  padding: 4px; /* Optional: add padding for better look */
+  box-sizing: border-box;
+}
+
+.reasonButton {
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 12px;
+  color: black;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  margin: 2px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  left: 50%;
+  transform: translateX(-25%) translateY(-550%);
+  top: 0;
+}
+.reasonButton:hover {
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24), 0 5px 5px 0 rgba(0,0,0,0.19);
+}
+
+.reason-text-container{
+  display: flex;
+  flex: 0 0 auto;
+  margin-top: 10px; 
+}
+.reason-text {
+  display: inline-block;
+  width: 400px; 
+  max-height: 250px;
+  word-break: break-word; 
+  text-align: center;
+  overflow-y: auto;
+  transform: translateX(-70%);
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  color: black;
+}

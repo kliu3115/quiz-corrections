@@ -1,0 +1,28 @@
+drop table if exists USERS
+drop table if exists FLASHCARDSETS
+drop table if exists FLASHCARDDETAILS
+
+CREATE TABLE USERS (
+  username NVARCHAR(20) NOT NULL,
+  password NVARCHAR(30) NOT NULL,
+  firstName NVARCHAR(20),
+  lastName NVARCHAR(20),
+);
+
+CREATE TABLE FLASHCARDSETS (
+  name NVARCHAR(20) NOT NULL,
+  createdBy NVARCHAR(20) NOT NULL,
+  createdDate DATETIME NOT NULL,
+  detailID INTEGER NOT NULL
+);
+
+CREATE TABLE FLASHCARDDETAILS (
+  fID INTEGER NOT NULL,
+  qID INTEGER NOT NULL,
+  question TEXT NOT NULL,
+  answer TEXT,
+  reason TEXT
+);
+
+ALTER TABLE USERS
+ADD PRIMARY KEY (username);
