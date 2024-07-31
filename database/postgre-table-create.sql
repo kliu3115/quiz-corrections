@@ -1,0 +1,42 @@
+CREATE TABLE USERS (
+  username VARCHAR(20) PRIMARY KEY NOT NULL,
+  password VARCHAR(30) NOT NULL,
+  firstName VARCHAR(20),
+  lastName VARCHAR(20)
+);
+
+CREATE TABLE FLASHCARDSETS(
+  setName VARCHAR(20) NOT NULL,
+  createdBy VARCHAR(20) NOT NULL,
+  createdDate TIMESTAMP NOT NULL,
+  setID SERIAL PRIMARY KEY
+);
+
+CREATE TABLE FLASHCARDDETAILS(
+  setID INT NOT NULL,
+  qID INT NOT NULL,
+  question TEXT NOT NULL,
+  answer TEXT NULL,
+  reason TEXT NULL,
+  PRIMARY KEY (setID, qID),
+  FOREIGN KEY (setID) REFERENCES FLASHCARDSETS(setID)
+);
+
+INSERT INTO USERS (username, password, firstName, lastName) VALUES ('boop', 'boop', 'boop', 'boop');
+
+INSERT INTO FLASHCARDSETS(setName, createdBy, createdDate) VALUES ('test set1: length 20', 'boop', CURRENT_TIMESTAMP);
+INSERT INTO FLASHCARDSETS(setName, createdBy, createdDate) VALUES ('test set2', 'boop', CURRENT_TIMESTAMP);
+INSERT INTO FLASHCARDSETS(setName, createdBy, createdDate) VALUES ('test set3', 'boop', CURRENT_TIMESTAMP);
+INSERT INTO FLASHCARDSETS(setName, createdBy, createdDate) VALUES ('test set4', 'boop', CURRENT_TIMESTAMP);
+
+INSERT INTO FLASHCARDDETAILS(setID, qID, question) VALUES (1, 1, 'who');
+INSERT INTO FLASHCARDDETAILS(setID, qID, question) VALUES (1, 2, 'what');
+INSERT INTO FLASHCARDDETAILS(setID, qID, question) VALUES (1, 3, 'when');
+INSERT INTO FLASHCARDDETAILS(setID, qID, question) VALUES (1, 4, 'where');
+INSERT INTO FLASHCARDDETAILS(setID, qID, question) VALUES (2, 1, 'how2');
+INSERT INTO FLASHCARDDETAILS(setID, qID, question) VALUES (3, 1, 'how3');
+INSERT INTO FLASHCARDDETAILS(setID, qID, question) VALUES (4, 1, 'how4');
+
+SELECT * FROM USERS;
+SELECT * FROM FLASHCARDSETS;
+SELECT * FROM FLASHCARDDETAILS;
