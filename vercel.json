@@ -1,4 +1,4 @@
 {
-    "builds": [{ "src": "front-end/index.html", "use": "@vercel/static" }],
-    "rewrites": [{ "source": "/(.*)", "destination": "/front-end/index.html" }]
+    "builds": [{ "src": "front-end/src/index.html", "use": "@vercel/static" }],
+    "rewrites": [{ "source": "/(.*)", "destination": "/front-end/src/index.html" }]
 }
