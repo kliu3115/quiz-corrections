@@ -27,7 +27,6 @@ function App() {
             <Route path="/My-Sets" element={<MySets />} />
             <Route path="/Register" element={<Register />} />
             <Route path="/Login" element={<Login />} />
-            <Route path="" element={<Home />} />
             <Route path="/" element={<Home />} />
           </Routes>
         </div>
