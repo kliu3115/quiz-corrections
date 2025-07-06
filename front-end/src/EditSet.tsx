@@ -168,7 +168,7 @@ const CreateSet = () => {
                 </tbody>
             </table>
             <button className="loginButton" name="add" onClick={addCard}> Add Card </button>
-            <button className="loginButton" name="submit" onClick={() => updateSet(setID, cards)}> Update Set </button>
+            <a href = '/my-sets'><button className="loginButton" name="submit" onClick={() => updateSet(setID, cards)}> Update Set </button></a>
         </div>
 )}
 

@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
 
-    /*const [loggedInUser, setLoggedInUser] = useState('');
+    const [loggedInUser, setLoggedInUser] = useState('');
     const navigate = useNavigate();
 
     const getUser = () => {
@@ -46,15 +46,6 @@ const Navbar = () => {
             </div>
         </nav>
     )
-}*/
-
-    return (
-        <nav className = "navbar">
-            <a href = '/'><h3> Home </h3></a>
-            <div className = "links"> 
-                <a href = '/login'> Login/Register </a>
-            </div> 
-        </nav>
-    )
 }
+
 export default Navbar;

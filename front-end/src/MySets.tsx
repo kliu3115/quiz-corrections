@@ -39,6 +39,10 @@ const MySets = () => {
     return(
         <div>
             {loggedInUser && <h1> {loggedInUser}'s Sets </h1>}
+            <a href = '/create-new'>
+                <button className="setButton"> + Create New Set + </button>
+            </a>
+            <br />
             {userSets && userSets.map((set: {setID: number, setName: string, createdBy: string, createdDate: string}) => (
                 <Link to={`/view-set/${set.setID}`}><button className='setButton' key={set.setID}> <h2> {set.setName} </h2> </button></Link>
             ))}
